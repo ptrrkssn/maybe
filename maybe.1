@@ -1,0 +1,77 @@
+.TH "MAYBE" "1" "12 May 2015" "" ""
+.SH NAME
+maybe \- randomly replies 'y' or 'n' (or user selectable answers)
+.SH SYNOPSIS
+.LP
+.nf
+\fBmaybe\fR [\fB-hs\fR] [\fB-S\fR \fIseed\fR] [\fB-n\fR \fIcount\fR] [ \fIanswer-1\fR ... \fIanswer-N\fR ]
+.fi
+
+.SH "DESCRIPTION"
+.sp
+.LP
+\fBmaybe\fR is a command line tool that will return random answers (by default \fIy\fR or \fIn\fR).
+
+.SH "OPTIONS"
+.sp
+.LP
+The following options are supported as of version 1.0:
+
+.sp
+.ne 2
+.mk
+.na
+\fB\fB-h\fR\fR
+.ad
+.RS 15n
+.rt
+Prints information about available options.
+.RE
+
+.sp
+.ne 2
+.mk
+.na
+\fB\fB-s\fR\fR
+.ad
+.RS 15n
+.rt
+Be silent and return a random exit code - 0 or 1.
+.RE
+
+.sp
+.ne 2
+.mk
+.na
+\fB\fB-S\fR\fIseed\fR
+.ad
+.RS 15n
+.rt
+Specify a number to seed the random generator with, or if the value is \fI-\fR then read a seed value from /dev/random.
+.RE
+
+.sp
+.ne 2
+.mk
+.na
+\fB\fB-n\fR\fIcount\fR
+.ad
+.RS 15n
+.rt
+Limit the number of responses returned.
+.RE
+
+.SH "EXIT STATUS"
+.sp
+.LP
+Returns 0 or 1 randomly.
+
+.SH "AUTHOR"
+.PP
+pftpd was written by Peter Eriksson <pen@lysator.liu.se>.
+.PP
+Permission is granted to copy, distribute and/or modify this
+document under the terms of the GNU Free
+Documentation License, Version 1.1 or any later version
+published by the Free Software Foundation; with no Invariant
+Sections, no Front-Cover Texts and no Back-Cover Texts.

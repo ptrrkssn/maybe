@@ -1,0 +1,6 @@
+maybe 1.0 - Copyright (c) 2015 Peter Eriksson <pen@lysator.liu.se>
+
+A small tool that returns random answers (by default 'y' or 'n') and random 
+exit value (0 or 1).
+
+- Peter
